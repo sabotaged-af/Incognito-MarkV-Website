@@ -23,14 +23,15 @@ if(isset($_POST['submit'])){
   $photop2=$_POST['q14b'];
   $airp1=$_POST['q15a'];
   $airp2=$_POST['q15b'];
-  $photoshopp1=$_POST['q16'];
+  $photoshopp1=$_POST['q16a'];
+  $photoshopp1=$_POST['q16b'];
   $gamingp1=$_POST['q17a'];
   $gamingp2=$_POST['q17b'];
   $adp1=$_POST['q18a'];
   $adp2=$_POST['q18b'];
   $adp3=$_POST['q18c'];
   $adp4=$_POST['q18d'];
-  $adp5=$_POST['q18e'];
+  $adp5=$_POST['q18d'];
   $moviep1=$_POST['q19a'];
   $moviep2=$_POST['q19b'];
   $djp1=$_POST['q20'];
@@ -42,7 +43,7 @@ if(isset($_POST['submit'])){
   $gamingp3=$_POST['q23c'];
   $gamingp4=$_POST['q23d'];
   $gamingp5=$_POST['q23d'];
-  $gamingp6=$_POST['q23e'];
+  $gamingp6=$_POST['q23d'];
   // open the file "demosaved.csv" for writing
 
 
@@ -157,13 +158,13 @@ $list[3] = array(
  );
 
 
-for ($i=9, $j=9; $i < 24, $j < 36 ; $i++, $j+=2) {
+for ($i=9, $j=9; $i < 22, $j < 45 ; $i++, $j+=2) {
 
-  $list[$i-3] = array($headers[$i], $data[$j], $data[$j+1]);
+  $list[$i-2] = array($headers[$i], $data[$j], $data[$j+1]);
   // code...
 }
 
-$list[27] = array($headers[27], $data[41], $data[42], $data[43], $data[44], $data[45]);
+$list[22] = array($headers[22], $data[41], $data[42], $data[43]);
 
 
 
@@ -189,7 +190,7 @@ $message = "<html><head>
 <h2>Click And Download</h2>
 <a href='http://thevoidclub.tech/register".$schlname1.".csv'></a>
 </body>";
-mail($email_to, $email_subject , $message,$headers);
-echo "<script>alert('You are registered..');location.href='http://thevoidclub.tech';</script>";
+//mail($email_to, $email_subject , $message,$headers);
+//echo "<script>alert('You are registered..');location.href='http://thevoidclub.tech';</script>";
 }
  ?>
