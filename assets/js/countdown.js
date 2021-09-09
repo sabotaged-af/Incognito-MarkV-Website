@@ -1,4 +1,4 @@
-var countDate = new Date('Oct 24, 2021 00:00:00').getTime();
+var countDate = new Date('Oct 08, 2021 00:00:00').getTime();
 
 function incognitoDaysLeft(){
     var today = new Date().getTime();

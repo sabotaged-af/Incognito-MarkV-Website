@@ -10,6 +10,11 @@
 #breadcrumbs {
   color: var(--text-white);
 }
+
+#breadcrumbs h2{
+  font-family: Origin-tech;
+}
+
 .event-details {
   padding-top: 40px;
 }
@@ -41,6 +46,7 @@
 }
 
 .event-details .event-info h3 {
+  font-family: Origin-tech;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
